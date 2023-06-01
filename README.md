@@ -22,15 +22,15 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse `<a name="about-project"></a>`
+# 📖 Hello Microverse <a name="about-project"></a>
 
 > This is my first project with Microverse using Githib professiona flow
 
 **Hello Microverse**
 
-## 🛠 Built With `<a name="built-with"></a>`
+## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack `<a name="tech-stack"></a>`
+### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
@@ -42,7 +42,7 @@
 
 <!-- Features -->
 
-### Key Features `<a name="key-features"></a>`
+### Key Features <a name="key-features"></a>
 
 - Add the linter for the project to fix the errors and clean the codeok_hand
 - User-friendly Interface: Simple and intuitive interface for a seamless user experience.rocket
@@ -52,7 +52,7 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo `<a name="live-demo"></a>`
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link]([https://google.com](https://Uzair-Manzoor.github.io/Hello-Microverse))
 
@@ -60,7 +60,7 @@
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started `<a name="getting-started"></a>`
+## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
@@ -80,19 +80,19 @@ Example commands:
 
 git clone https://github.com/Uzair-Manzoor/Hello-Microverse.git
 
-**3. Install** `<a name="install"></a>`
+**3. Install** <a name="install"></a>
 
 - please first install the node package files
   - npm install
 
-**4. Usage**`<a name="usage"></a>`
+**4. Usage** <a name="usage"></a>
 
 - In order to use this project you create branch to add more feature.
 - But in order to run the project use below commands.
   - npm run build (It will create a production ready file)
   - npm start (It will run the server on your machine)
 
-**5. Run Linters** `<a name="run-linters"></a>`
+**5. Run Linters** <a name="run-linters"></a>
 
 I have added linters or tests in order to avoid typos and ensure good practice in this project.So while using this repository if you need to check your work no matters have worked on html, css and js you can use below commands
 
@@ -103,7 +103,7 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 
   `npx stylelint "**/*.{css,scss}"`
 
-**6. Deployment** `<a name="deployment"></a>`
+**6. Deployment** <a name="deployment"></a>
 
  You can deploy your project using `github` free source.
 
@@ -111,7 +111,7 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 
 <!-- AUTHORS -->
 
-## 👥 Authors `<a name="authors"></a>`
+## 👥 Authors <a name="authors"></a>
 
 👤 **Uzair-Manzoor**
 
@@ -123,7 +123,7 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features `<a name="future-features"></a>`
+## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[add more interactive buttons and sections]**
 - [ ] **[style it beautifully]**
@@ -132,7 +132,7 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing `<a name="contributing"></a>`
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
@@ -142,7 +142,7 @@ Feel free to check the [issues page](../../issues/).
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support `<a name="support"></a>`
+## ⭐️ Show your support <a name="support"></a>
 
 If you like this project please don't hesitate to support me with your valued contribution and don't forget to star the repo to reach more people.
 
@@ -150,7 +150,7 @@ If you like this project please don't hesitate to support me with your valued co
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments `<a name="acknowledgements"></a>`
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for their unique way of teach me how to code, and also Freecodecamp and w3school for their practical articles that helped me to make this project.
 
@@ -158,7 +158,7 @@ I would like to thank Microverse for their unique way of teach me how to code, a
 
 <!-- LICENSE -->
 
-## 📝 License `<a name="license"></a>`
+## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/Uzair-Manzoor/Hello-Microverse/blob/main/LICENSE) licensed.
 
