@@ -22,11 +22,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
-> This is my first project with Microverse using Githib professiona flow
-
-**Hello Microverse**
+> This is my responsive portfolio project with Microverse using Githib flow in a professional way to work with html and css responsive design following figma template using flexbox, basic structure and data query. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -54,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]([https://google.com](https://Uzair-Manzoor.github.io/Hello-Microverse))
+- [Live Demo Link]([https://google.com](https://Uzair-Manzoor.github.io/Portfolio))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,7 +76,7 @@ Clone this repository to your desired folder:
 
 Example commands:
 
-git clone https://github.com/Uzair-Manzoor/Hello-Microverse.git
+git clone https://github.com/Uzair-Manzoor/Portfolio.git
 
 **3. Install** <a name="install"></a>
 
@@ -94,7 +92,7 @@ git clone https://github.com/Uzair-Manzoor/Hello-Microverse.git
 
 **5. Run Linters** <a name="run-linters"></a>
 
-I have added linters or tests in order to avoid typos and ensure good practice in this project.So while using this repository if you need to check your work no matters have worked on html, css and js you can use below commands
+I have added linters or tests in order to avoid typos and ensure good practice in this project. So while using this repository if you need to check your work no matters have worked on html, css and js you can use below commands
 
 - In order to run the linter test on `index.html` or any html file. use below command
 
@@ -160,6 +158,6 @@ I would like to thank Microverse for their unique way of teach me how to code, a
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Uzair-Manzoor/Hello-Microverse/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/Uzair-Manzoor/Portfolio/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
