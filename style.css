@@ -8,7 +8,7 @@
   src: url("./resources/font/Poppins-Bold.ttf");
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 375px) {
   body {
     font-family: Poppins, sana-serif;
     font-style: normal;
@@ -25,11 +25,10 @@ html {
   min-height: 100vh;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fff;
+  background-position: 1% 1%;
 }
 .article-item1 {
-  margin: 10%;
+  margin: 15%;
 }
 .header {
   align-items: center;
@@ -45,7 +44,7 @@ html {
   padding-top: 2%;
 }
 .headline-container {
-  height: 100vh;
+  height: 60vh;
   width: 100vw;
 }
 .social-links {
