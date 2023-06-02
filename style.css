@@ -8,7 +8,7 @@
   src: url("./resources/font/Poppins-Bold.ttf");
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 600px) {
   body {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -17,7 +17,7 @@
 }
 
 html {
-  background: #fff;
+  background: #e5e5e5;
 }
 
 .article {
@@ -28,10 +28,38 @@ html {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 1% 1%;
+  align-items: flex-start;
+  position: absolute;
+  border-bottom-left-radius: 15%;
+  background-color: #fff;
 }
 
 .article-item1 {
   margin: 15%;
+}
+
+h1 {
+  color: #172b4d;
+  font-weight: 950;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 52px;
+  display: flex;
+  flex: none;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: Poppins-bold, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  flex: none;
+  margin-left: 0;
+  margin-right: 24px;
 }
 
 .header {
@@ -45,8 +73,14 @@ html {
 
 .manu {
   float: right;
-  padding-left: 60%;
-  padding-top: 2%;
+  padding: 8px;
+  flex-direction: row;
+  border-radius: 8px;
+  align-items: flex-start;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 24px;
 }
 
 .headline-container {
@@ -59,12 +93,16 @@ html {
   list-style: none;
   margin-top: 10px;
   padding-left: 1%;
-  padding-right: 8px;
-  justify-content: left;
+  padding-right: 10vw;
+  margin-bottom: 0;
 }
 
 .social-title {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
+  color: #7f8cff;
+  line-height: 24px;
+  width: 120px;
+  height: 24px;
 }
