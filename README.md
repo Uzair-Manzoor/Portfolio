@@ -52,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]([https://uzair-manzoor.github.io/Portfolio/])
+- [Live Demo Link](https://uzair-manzoor.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,7 +62,7 @@
 
 To get a local copy up and running, follow these steps.
 
-**1. Prerequisites**
+**1. Prerequisites** <a name="prerequisites"></a>
 
 In order to run this project you need:
 
@@ -70,7 +70,7 @@ In order to run this project you need:
 - Github
 - git
 
-**2. Setup**
+**2. Setup** <a name="setup"></a>
 
 Clone this repository to your desired folder:
 
