@@ -218,18 +218,32 @@
                 </ul>
             </ul>
         </section>
-        <section>
-        <h2 class="contact-me">Contact me</h2>
-        <p class="contact-paragraph">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!
-        </p>
-      <form action="">
-     <input type="name" name="name" id="name">
-     <input type="email" name="email" id="email">
-      </form>
-      </section>
+        
+        <section class="contact--section">
+          <div>
+            <h2>Contact me</h2>
+            <p>
+              If you have an application you are interested in developing, 
+              a feature that you need built or a project that needs coding. 
+              I’d love to help with it!
+            </p>
+            <form action="https://formspree.io/f/xwkjylde" method="post">
+              <input type="text" name="name" id="name"
+                required maxlength="30"
+                placeholder="Write your name here">
+              <input type="email" name="email" id="email"
+                required
+                placeholder="Write your email here">
+              <textarea name="message" id="message"
+                required maxlength="500"
+                placeholder="Write your message here ...">
+              </textarea>
+              <div>
+                <button type="submit">Get in touch</button>
+              </div>
+            </form>
+          </div>
+        </section>
     </main>    
 </body>
 </html
