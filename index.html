@@ -221,26 +221,13 @@
         
         <section class="contact--section">
           <div>
-            <h2>Contact me</h2>
-            <p>
-              If you have an application you are interested in developing, 
-              a feature that you need built or a project that needs coding. 
-              I’d love to help with it!
-            </p>
-            <form action="https://formspree.io/f/xwkjylde" method="post">
-              <input type="text" name="name" id="name"
-                required maxlength="30"
-                placeholder="Write your name here">
-              <input type="email" name="email" id="email"
-                required
-                placeholder="Write your email here">
-              <textarea name="message" id="message"
-                required maxlength="500"
-                placeholder="Write your message here ...">
-              </textarea>
-              <div>
-                <button type="submit">Get in touch</button>
-              </div>
+            <form action="https://formspree.io/f/xwkjylde" method="post" class="form">
+                <h2 class="contact-me">Contact me</h2>
+                <p class="contact-text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it!</p>
+              <input type="text" name="username" class="user" placeholder="Write your name here">
+              <input type="email" name="useremail" class="user" placeholder="Email address, phone number or Skype">
+              <textarea name="text" class="textarea" maxlength="500" minlength="1" cols="30" rows="10" placeholder="Write your message here ..."> </textarea>
+              <input type="submit" name="submit" class="button" value="Get in touch">
             </form>
           </div>
         </section>
