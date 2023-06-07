@@ -311,3 +311,118 @@ p {
 a {
   text-decoration: none;
 }
+
+.contact--section {
+  background-color: white;
+  width: 100%;
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 70px;
+  background: #6070ff;
+  background-image: url(resources/images/contact\ form\ shapes-mobile@2x.png);
+  padding-top: 40px;
+  margin-bottom: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: 207px;
+  background-position: right 15px;
+  background-repeat: no-repeat;
+}
+
+.contact-me {
+  font-family: Poppins-bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-top: 17%;
+  margin-bottom: 0;
+}
+
+.contact-text {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  color: #ebebff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.user {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 48px;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding-left: 16px;
+}
+
+.textarea {
+  width: 327px;
+  height: 145px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+.button {
+  margin-top: 15px;
+  color: #6070ff;
+  border-radius: 5px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+  width: 142px;
+  height: 48px;
+
+}
+
+.button:hover {
+  font-family: Poppins, sans-serif;
+  background-color: #6070ff;
+  color: #fff;
+  border: 1px solid white;
+}
+
+.button:active {
+  background-color: #2230d2;
+  color: white;
+  border: 1px solid white;
+}
+
+.button:disabled {
+  background-color: white;
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
+}
