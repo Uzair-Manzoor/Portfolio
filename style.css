@@ -315,8 +315,6 @@ a {
 .contact--section {
   background-color: white;
   width: 100%;
-  /* transform: matrix(1, 0, 0, -1, 0, 0); */
-
 }
 
 .form {
@@ -405,7 +403,6 @@ a {
   background-color: #fff;
   width: 142px;
   height: 48px;
-
 }
 
 .button:hover {
