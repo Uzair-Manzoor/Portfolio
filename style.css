@@ -423,3 +423,16 @@ a {
   color: #5e6c84;
   border: 1px solid #5e6c84;
 }
+
+.scale-para:hover {
+  -webkit-animation: scale-text 2s;
+  animation: scale-text 2s;
+}
+@keyframes scale-text {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.05;
+  }
+}
