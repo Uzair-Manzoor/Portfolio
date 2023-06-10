@@ -9,21 +9,44 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
 </head>
 <body>
-
-    <header class="header">
-        <a href="index.html">
-            <img src="resources/images/Logo.png" alt="my logo">
-        </a>
-        <nav class="manu">
-            <img src="resources/icon/menu.png" alt="menu icon">
-        </nav>
+    <header class="header">        
+        <nav class="header-nav">
+                <div>
+                    <a href="#"><img src="resources/images/Logo.png" alt="my logo"></a>
+                </div>
+                <div class="header-manu">
+                    <img class="manu-icon" src="resources/icon/menu.png" alt="menu icon">
+                </div>
+            <ul class="nav-items">
+            <li class="nav-item">
+              <a class="nav-item-action" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-action" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-action" href="#contact">Contact</a>
+            </li>
+            </ul>
+          <ul class="mobile-nav-items">
+            <li class="nav-item">
+              <a class="nav-item-action" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-action" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-action" href="#contact">Contact</a>
+            </li>
+          </ul>
+    </nav>
     </header>
     <main>
         <!-- Banner -->
         <section class="headline-container">
             <article class="article">
                 <div class="article-item1">
-                    <h1 class="headline-title">I'm Uzair.<br>Glad to see you!</h1>
+                    <h1>I'm Uzair.<br>Glad to see you!</h1>
             <p class="headline-content">
                 I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
             </p>
@@ -155,11 +178,11 @@
         <section class="about-me">
             <div>
                 <h2 class="headline-title">About Myself</h2>
-                <div class="article-2 about-me">
+                <div class="article-2">
                     <p class="headline-content">
                         I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
                     </p>
-                    <a href="index.html"><h3 class="social-title">LET'S CONNECT</h3></a>
+                    <a class="social-title" href="#">LET'S CONNECT</a>
                     <ul class="social-links">
                         <li class="social-links">
                             <a href="#">
@@ -239,4 +262,4 @@
         </section>
     </main>    
 </body>
-</html
+</html>
