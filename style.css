@@ -371,6 +371,7 @@ a:hover {
   margin: 10px 0;
   transition: padding 0.3s ease-in-out;
 }
+
 .form_text_area:hover {
   padding-left: 20px;
 }
@@ -378,7 +379,7 @@ a:hover {
 .submit {
   float: left;
 }
-/* Media Query */
+
 @media screen and (min-width: 768px) {
   .header {
     padding: 0 50px;
