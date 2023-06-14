@@ -241,7 +241,7 @@
   .about {
     display: grid;
     row-gap: 15px;
-    padding: 0 15px;
+    padding: 30px 15px;
     background-color: #fff;
     border-top-right-radius: 70px;
   }
@@ -320,7 +320,7 @@
 
   .form_container {
     margin: 0 auto;
-    padding: 14px;
+    padding: 0;
   }
 
   .form_inputs {
@@ -367,5 +367,9 @@
 
   .form_text_area:hover {
     padding-left: 20px;
+  }
+
+  .submit {
+    margin-right: 172px;
   }
 }
