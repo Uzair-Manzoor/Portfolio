@@ -211,6 +211,7 @@ body {
 .btn:hover {
   color: #fff;
   background: #4269cc;
+  transform: perspective(150px) translateZ(20px);
 }
 
 .btn:active {
@@ -441,6 +442,15 @@ a:hover {
     line-height: 60px;
   }
 
+  .social-link {
+    max-width: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .social-link:hover {
+    transform: scale(1.5);
+  }
+
   .work-section {
     margin: 80px 50px;
   }
@@ -515,6 +525,7 @@ a:hover {
     background: #fff;
     border-radius: 10px;
     border: 1px solid #396df2;
+    transition: transform 1s;
   }
 
   .btn:hover {
@@ -592,5 +603,20 @@ a:hover {
   .contact_container {
     width: 500px;
     justify-self: center;
+  }
+
+  .scale-para:hover {
+    -webkit-animation: scale-text 2s;
+    animation: scale-text 2s;
+  }
+
+  @keyframes scale-text {
+    from {
+      scale: 1;
+    }
+
+    to {
+      scale: 1.05;
+    }
   }
 }
