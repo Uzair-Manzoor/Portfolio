@@ -142,7 +142,7 @@ body {
 }
 
 .work-section {
-  margin: 80px 0;
+  margin: 80px 14px;
   display: grid;
   row-gap: 80px;
   padding: 10px;
@@ -151,10 +151,10 @@ body {
 
 .work-card {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 24px;
   min-height: 3em;
-  border: 1px solid #c6c6c6;
-  padding: 20px 15px;
+  border: 1px solid #dfe1e6;
+  padding: 20px;
   display: grid;
 }
 
@@ -164,6 +164,7 @@ body {
   flex-direction: column;
   justify-self: center;
   overflow: hidden;
+  width: 100%;
 }
 
 .work-preview img {
@@ -172,38 +173,33 @@ body {
 }
 
 .work-preview:hover .project-img {
-  transform: scale(1.4);
+  transform: scale(1.1);
 }
 
 .work-detail {
-  align-self: center;
+  align-self:flex-start;
   padding: 10px;
 }
 
 .work-title {
-  display: flex;
-  overflow: hidden;
-  color: #7a869a;
+  /* display: flex; */
+  /* overflow: hidden; */
 }
 
 .dot {
-  margin-top: 7px;
+  margin-top: 14px;
   padding-left: 8px;
   padding-right: 8px;
   width: 25px;
   height: 10px;
 }
 
-.color {
-  color: #000 !important;
-}
-
 .span-grid {
   display: flex;
   justify-content: left;
   list-style: none;
-  padding-left: 5px;
-  margin-bottom: 10px;
+  padding-left: 1px;
+  line-height: 40px;
 }
 
 .btn {
@@ -451,18 +447,16 @@ a:hover {
   }
 
   .work-section {
-    margin: 100px;
+    margin: 80px 50px;
   }
 
   .work-card {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .work-preview {
-    padding-left: 3%;
-    height: 500px;
-    width: 50%;
+    width: 100%;
     justify-content: center;
   }
 
@@ -483,9 +477,9 @@ a:hover {
   .work-title {
     margin: 10px 0;
     color: #172b4d;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 44px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
   }
 
   .dot {
