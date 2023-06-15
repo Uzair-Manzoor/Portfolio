@@ -397,7 +397,7 @@ a:hover {
     min-height: 113vh;
     flex-direction: column;
     background-color: white;
-    border-bottom-left-radius: 15%;
+    border-bottom-left-radius: 100px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 99% 25%;
@@ -450,9 +450,17 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
+  .work-card:nth-child(even) > .work-details {
+    order: 2;
+  }
+
   .work-preview {
     width: 100%;
     justify-content: center;
+  }
+
+  .work-card:nth-child(even) > .work-preview {
+    order: 1;
   }
 
   .work-preview img {
