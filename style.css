@@ -177,13 +177,8 @@ body {
 }
 
 .work-detail {
-  align-self:flex-start;
+  align-self: flex-start;
   padding: 10px;
-}
-
-.work-title {
-  /* display: flex; */
-  /* overflow: hidden; */
 }
 
 .dot {
