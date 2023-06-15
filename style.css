@@ -132,6 +132,15 @@ p {
   overflow: hidden;
 }
 
+.social-icon {
+  max-width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.5);
+}
+
 .work-preview img {
   transition: transform 0.2s ease-in-out;
   max-width: 100%;
