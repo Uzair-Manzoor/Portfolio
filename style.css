@@ -454,13 +454,13 @@ a:hover {
     order: 2;
   }
 
-  .work-card:nth-child(even) > .work-preview {
-    order: 1;
-  }
-
   .work-preview {
     width: 100%;
     justify-content: center;
+  }
+
+  .work-card:nth-child(even) > .work-preview {
+    order: 1;
   }
 
   .work-preview img {
