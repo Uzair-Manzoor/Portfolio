@@ -88,10 +88,6 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* 
-.article-item1 {
-  margin: 15% 10% 25% 5%;
-} */
 
 .headline-title {
   color: #172b4d;
@@ -121,7 +117,6 @@ body {
 .headline-title:hover {
   color: #6070ff;
 }
-
 
 .headline-content {
   font-size: 16px;
