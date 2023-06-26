@@ -176,6 +176,21 @@ a {
   }
 }
 
+.scale-para:hover {
+  -webkit-animation: scale-text 2s;
+  animation: scale-text 2s;
+}
+
+@keyframes scale-text {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.05;
+  }
+}
+
 .headline-title:hover {
   color: #6070ff;
 }
@@ -201,6 +216,11 @@ a {
   margin-top: 10px;
   padding-left: 1%;
   padding-right: 10px;
+  transition: all 1s ease-in-out;
+}
+
+.social-link:hover {
+  transform: scale(1.5);
 }
 
 .social-icon {
@@ -513,7 +533,7 @@ a:hover {
 
   .social-link {
     max-width: 100%;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .social-link:hover {
@@ -677,20 +697,5 @@ a:hover {
 
   .title {
     font-family: Poppins-bold, sans-serif;
-  }
-
-  .scale-para:hover {
-    -webkit-animation: scale-text 2s;
-    animation: scale-text 2s;
-  }
-
-  @keyframes scale-text {
-    from {
-      scale: 1;
-    }
-
-    to {
-      scale: 1.05;
-    }
   }
 }
