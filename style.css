@@ -10,6 +10,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -24,6 +25,9 @@ body {
   min-height: 70px;
   background: #fff;
   width: 100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: fixed;
 }
 
 .header-nav {
@@ -33,12 +37,33 @@ body {
   justify-content: space-between;
 }
 
+.header-logo {
+  font-family: Poppins-bold, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 52px;
+}
+
+a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.header-logo a {
+  text-decoration: none;
+  position: relative;
+}
+
 .header-manu {
   padding: 3px 5px;
 }
 
+.menu-link {
+  display: none;
+}
+
 .manu-icon {
-  width: 48px;
+  width: 50px;
   height: auto;
 }
 
@@ -55,6 +80,7 @@ body {
   line-height: 20px;
   padding: 10px 12px;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-item-action:hover {
@@ -69,6 +95,38 @@ body {
   width: 100%;
   height: 100vh;
   display: none;
+  position: fixed;
+  flex-direction: column;
+  backdrop-filter: blur(7px);
+  padding: 70px 15px 15px 10px;
+  -webkit-backdrop-filter: blur(7px);
+  background: rgba(46, 64, 228, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.mobile-nav-items .nav-item-action {
+  width: 100%;
+  display: block;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.toggle-cross {
+  top: 20px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  right: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.toggle-cross:hover {
+  background: #f00;
 }
 
 .article {
@@ -85,8 +143,12 @@ body {
   background-size: 100%;
   background-position-x: center;
   background-repeat: no-repeat;
-  padding-top: 10px;
+  padding-top: 80px;
   padding-bottom: 10px;
+}
+
+.article-item1 {
+  margin: 60px 10px;
 }
 
 .headline-title {
@@ -297,26 +359,18 @@ body {
   margin-right: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: #6070ff;
-}
-
 a:hover {
   color: #172b4d;
 }
 
 .contact_form {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 6em 0 0 0;
-  padding: 3em;
-  border-radius: 5em 0 0 0;
+  padding: 10px;
+  border-radius: 70px 0 0 0;
   background-color: #6070ff;
   background-repeat: no-repeat;
   background-position-x: right;
-  color: #fff;
+  background-size: 80%;
   background-image: url("resources/images/contact\ form\ shapes-mobile@2x.png");
 }
 
@@ -326,22 +380,21 @@ a:hover {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  margin-top: 103px;
+  margin-top: 80px;
+  color: #fff;
 }
 
-.contact_form_des {
+.form_dis {
   font-size: 20px;
   margin: 10px 0;
-  padding: 10px;
   line-height: 28px;
   text-align: center;
-  background: #6070ff;
-  border-radius: 10px;
+  color: #fff;
+  padding: 0 25px;
 }
 
 .form_container {
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 20px;
 }
 
 .form_inputs {
@@ -417,7 +470,8 @@ a:hover {
     background-size: 94%;
     background-position-x: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 92vh;
+    margin-top: 60px;
   }
 
   .article-item1 {
@@ -489,8 +543,8 @@ a:hover {
   }
 
   .work-preview img {
-    transition: transform 0.2s ease-in-out;
-    max-width: 100%;
+    transition: transform 2s ease-in-out;
+    max-width: 90%;
     padding: 0;
   }
 
@@ -499,7 +553,7 @@ a:hover {
   }
 
   .work-detail {
-    margin-left: 15px;
+    margin-left: 20px;
   }
 
   .work-title {
@@ -609,7 +663,8 @@ a:hover {
   .contact_form {
     display: flex;
     background-position: initial;
-    background-size: cover;
+    background-size: 95%;
+    height: 91vh;
     justify-content: center;
     align-items: center;
     background-image: url("./resources/images/contact-form-bg-desktop.png");
