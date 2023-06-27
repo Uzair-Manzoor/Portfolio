@@ -4,44 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Uzair's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">        
-        <nav class="header-nav">
-                <div>
-                    <a href="#"><img src="resources/images/Logo.png" alt="my logo"></a>
-                </div>
-                <div class="header-manu">
-                    <img class="manu-icon" src="resources/icon/menu.png" alt="menu icon">
-                </div>
-            <ul class="nav-items">
-            <li class="nav-item">
-              <a class="nav-item-action" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-action" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-action" href="#contact">Contact</a>
-            </li>
-            </ul>
-          <ul class="mobile-nav-items">
-            <li class="nav-item">
-              <a class="nav-item-action" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-action" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-action" href="#contact">Contact</a>
-            </li>
-          </ul>
+  <header class="header">
+    <nav class="header-nav">
+      <div class="header-logo">
+        <a class="blue" href="#">Uzair Manzoor</a>
+      </div>
+      <div class="header-manu">
+        <img class="manu-icon" src="resources/icon/menu.png" onclick="openmenu()" alt="menu"/>
+      </div>
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a class="nav-item-action" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item-action" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item-action" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <ul class="mobile-nav-items" id="mobile-nav-items">
+        <span class="toggle-cross">
+          <img src="resources/icon/cross-icon-01.png" onclick="closemenu()" alt="X"/>
+        </span>
+        <li class="nav-item" onclick="closemenu()">
+          <a id="m-nav" class="nav-item-action" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item" onclick="closemenu()">
+          <a id="m-nav" class="nav-item-action" href="#about">About</a>
+        </li>
+        <li class="nav-item" onclick="closemenu()">
+          <a id="m-nav" class="nav-item-action" href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
-    </header>
+  </header>
     <main>
-        <!-- Banner -->
         <section class="headline-container">
             <article class="article">
                 <div class="article-item1">
@@ -83,7 +85,7 @@
             </article>
         </section>
         <!-- work section -->
-        <section class="work-section">
+        <section class="work-section" id="portfolio">
             <div class="work-card">
                 <div class="work-preview">
                     <img class="project-img" src="resources/images/Snapshoot Portfolio 5.jpg" alt="Project 1">
@@ -173,41 +175,41 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-myself">
-              <h2 class="headline-title">About Myself</h2>
-              <p class="headline-content">
+              <h2 class="headline-title scale-para">About Myself</h2>
+              <p class="headline-content scale-para">
                 Hello I'm a software developer! I can help you build a product ,
                 feature or website Look through some of my work and experience! If
                 you like what you see and have a project you need coded, don't
                 hestiate to contact me.
               </p>
               <div class="headline-social">
-                <a class="social-title" href="#">LET'S CONNECT</a>
+                <h3 class="scale-para"><a class="social-title" href="#">LET'S CONNECT</a></h3>
                 <ul class="social-links">
-                    <li class="social-links">
+                    <li class="social-link">
                         <a href="#">
                             <img src="resources/icon/twitter.svg" alt="Twitter">
                         </a>
                     </li>
-                    <li class="social-links">
+                    <li class="social-link icon">
                         <a href="#">
-                            <img src="resources/icon/Linkedin icon.svg" alt="Linkedin">
+                            <img class="social-icon" src="resources/icon/Linkedin icon.svg" alt="Linkedin">
                         </a>
                     </li>
-                    <li class="social-links">
+                    <li class="social-link">
                         <a href="#">
-                            <img src="resources/icon/github.svg" alt="Github">
+                            <img class="social-icon" src="resources/icon/github.svg" alt="Github">
                         </a>
                     </li>
-                    <li class="social-links">
+                    <li class="social-link">
                         <a href="#">
-                            <img src="resources/icon/Vector.svg" alt="vector">
+                            <img class="social-icon" src="resources/icon/Vector.svg" alt="vector">
                         </a>
                     </li>
-                    <li class="social-links">
+                    <li class="social-link">
                         <a href="#">
-                            <img src="resources/icon/VectorM.svg" alt="vectorm">
+                            <img class="social-icon" src="resources/icon/VectorM.svg" alt="vectorm">
                         </a>
                     </li>
                 </ul>
@@ -262,10 +264,10 @@
               </ul>
             </div>
           </section>
-      <section class="contact_form">
+      <section class="contact_form" id="contact">
         <div class="contact_container">
           <h2 class="title">Contact me</h2>
-          <p class="contact_form_des">
+          <p class="form_dis">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I'd
             love to help with it
@@ -307,6 +309,7 @@
           </form>
         </div>
       </section>
-    </main>    
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
