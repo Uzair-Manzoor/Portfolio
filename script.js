@@ -1,4 +1,4 @@
-const popup = document.getElementById('mobile-nav-items');
+const mobieMenu = document.getElementById('mobile-nav-items');
 function openmenu() {
   popup.style.display = 'block';
 }
