@@ -76,7 +76,7 @@ a {
 .nav-item-action {
   font-size: 15px;
   font-weight: 500;
-  color: #344563;
+  color: #2230d2;
   line-height: 20px;
   padding: 10px 12px;
   text-decoration: none;
@@ -85,7 +85,8 @@ a {
 
 .nav-item-action:hover {
   color: #fff;
-  background-color: #344563 !important;
+  background-color: #2230d2 !important;
+  border-radius: 10px;
 }
 
 .mobile-nav-items {
@@ -126,7 +127,7 @@ a {
 }
 
 .toggle-cross:hover {
-  background: #f00;
+  background: #2230d2;
 }
 
 .article {
