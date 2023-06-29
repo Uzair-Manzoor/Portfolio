@@ -345,11 +345,8 @@ a {
   position: fixed;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-  /* background: rgba(46, 64, 228, 0.7); */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
-
-
 
 .open-popup {
   visibility: visible;
@@ -697,7 +694,7 @@ a:hover {
   a {
     text-decoration: none;
   }
-  
+
   .contact_form {
     display: flex;
     background-position: initial;
@@ -707,12 +704,12 @@ a:hover {
     align-items: center;
     background-image: url("./resources/images/contact-form-bg-desktop.png");
   }
-  
+
   .contact_container {
     width: 500px;
     justify-self: center;
-   }
-  
+  }
+
   .title {
     font-family: Poppins-bold, sans-serif;
   }
