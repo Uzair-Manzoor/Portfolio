@@ -677,5 +677,8 @@ a:hover {
     margin-bottom: 15px;
   }
 
+  a {
+    text-decoration: none;
+  }
 
 }
