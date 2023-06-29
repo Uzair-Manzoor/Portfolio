@@ -680,6 +680,7 @@ a:hover {
   a {
     text-decoration: none;
   }
+  
   .contact_form {
     display: flex;
     background-position: initial;
@@ -689,8 +690,13 @@ a:hover {
     align-items: center;
     background-image: url("./resources/images/contact-form-bg-desktop.png");
   }
-   .contact_container {
+  
+  .contact_container {
     width: 500px;
     justify-self: center;
    }
+  
+  .title {
+    font-family: Poppins-bold, sans-serif;
+  }
 }
