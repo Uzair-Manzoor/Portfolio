@@ -685,4 +685,6 @@ a:hover {
     background-position: initial;
     background-size: 95%;
     height: 91vh;
+    justify-content: center;
+    align-items: center;
 }
