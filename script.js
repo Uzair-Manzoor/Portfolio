@@ -8,3 +8,12 @@ function closemenu() {
 }
 mobileMenu.addEventListener('click', openmenu);
 mobileMenu.addEventListener('click', closemenu);
+
+// popup-window
+let popupWindow = document.getElementById("popup-window")
+function openPopup(){
+  popupWindow.classList.add("open-popup")
+}
+function closePopup(){
+  popupWindow.classList.remove("open-popup")
+}
