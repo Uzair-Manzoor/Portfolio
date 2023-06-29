@@ -690,6 +690,6 @@ a:hover {
     background-image: url("./resources/images/contact-form-bg-desktop.png");
   }
    .contact_container {
-     
+    width: 500px;
    }
 }
