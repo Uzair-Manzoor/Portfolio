@@ -338,6 +338,23 @@ a {
   line-height: 16px;
 }
 
+.popup-window {
+  visibility: hidden;
+  top: 150px;
+  width: 80%;
+  position: fixed;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  /* background: rgba(46, 64, 228, 0.7); */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+
+
+.open-popup {
+  visibility: visible;
+}
+
 .about {
   display: grid;
   row-gap: 15px;
