@@ -677,26 +677,5 @@ a:hover {
     margin-bottom: 15px;
   }
 
-  a {
-    text-decoration: none;
-  }
 
-  .contact_form {
-    display: flex;
-    background-position: initial;
-    background-size: 95%;
-    height: 91vh;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./resources/images/contact-form-bg-desktop.png");
-  }
-
-  .contact_container {
-    width: 500px;
-    justify-self: center;
-  }
-
-  .title {
-    font-family: Poppins-bold, sans-serif;
-  }
 }
