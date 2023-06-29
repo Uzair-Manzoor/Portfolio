@@ -691,5 +691,6 @@ a:hover {
   }
    .contact_container {
     width: 500px;
+    justify-self: center;
    }
 }
