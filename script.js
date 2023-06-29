@@ -6,14 +6,14 @@ function openmenu() {
 function closemenu() {
   mobileMenu.style.display = 'none';
 }
+
 mobileMenu.addEventListener('click', openmenu);
 mobileMenu.addEventListener('click', closemenu);
-
-// popup-window
-let popupWindow = document.getElementById("popup-window")
-function openPopup(){
-  popupWindow.classList.add("open-popup")
+// POPUP WINDOW
+const popupWindow = document.getElementById('popup-window');
+function openPopup() {
+  popupWindow.classList.add('open-popup');
 }
-function closePopup(){
-  popupWindow.classList.remove("open-popup")
+function closePopup() {
+  popupWindow.classList.remove('open-popup');
 }
