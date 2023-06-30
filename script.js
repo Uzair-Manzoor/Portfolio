@@ -185,3 +185,21 @@ function fetchAllProject() {
 window.onload = () => {
   fetchAllProject();
 };
+function validateForm(event) {
+  event.preventDefault(); // Prevent form submission
+
+  const emailInput = document.getElementById('email');
+  const errorMessage = document.getElementById('errorMessage');
+
+  const email = emailInput.value;
+  const lowerCaseEmail = email.toLowerCase();
+
+  if (email !== lowerCaseEmail) {
+    errorMessage.innerText = 'Email must be in lowercase';
+    errorMessage.style.display = 'block';
+    return;
+  }
+  document.getElementById('contact-form').submit();
+}
+
+onclick.addEventListener('submit', validateForm);
