@@ -196,3 +196,5 @@ function validateForm(event) {
         errorMessage.style.display = "block";
     return;
   }
+    document.getElementById("contact-form").submit();
+}
