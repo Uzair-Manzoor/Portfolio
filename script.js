@@ -187,14 +187,19 @@ window.onload = () => {
 };
 function validateForm(event) {
   event.preventDefault(); // Prevent form submission
-    var email = document.getElementById("email");
-  var errorMessage = document.getElementById("errorMessage");
-   var email = email.value;
-  var lowerCaseEmail = email.toLowerCase();
-    if (email !== lowerCaseEmail) {
-    errorMessage.innerText = "Email must be in lowercase.";
-        errorMessage.style.display = "block";
+
+  const emailInput = document.getElementById('email');
+  const errorMessage = document.getElementById('errorMessage');
+
+  const email = emailInput.value;
+  const lowerCaseEmail = email.toLowerCase();
+
+  if (email !== lowerCaseEmail) {
+    errorMessage.innerText = 'Email must be in lowercase';
+    errorMessage.style.display = 'block';
     return;
   }
-    document.getElementById("contact-form").submit();
+  document.getElementById('contact-form').submit();
 }
+
+onclick.addEventListener('submit', validateForm);
