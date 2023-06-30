@@ -185,3 +185,5 @@ function fetchAllProject() {
 window.onload = () => {
   fetchAllProject();
 };
+function validateForm(event) {
+  event.preventDefault(); // Prevent form submission
