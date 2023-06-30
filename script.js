@@ -189,3 +189,5 @@ function validateForm(event) {
   event.preventDefault(); // Prevent form submission
     var email = document.getElementById("email");
   var errorMessage = document.getElementById("errorMessage");
+   var email = email.value;
+  var lowerCaseEmail = email.toLowerCase();
