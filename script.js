@@ -217,4 +217,6 @@ form.addEventListener('submit', (e) => {
   localStorage.setItem('myEmailValue', userEmail.value);
   localStorage.setItem('myTextValue', text.value);
   
+  form.reset();
+});
   
