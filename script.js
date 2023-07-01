@@ -185,43 +185,61 @@ function fetchAllProject() {
 window.onload = () => {
   fetchAllProject();
 };
-function validateForm(event) {
-  event.preventDefault(); // Prevent form submission
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
 
-  const emailInput = document.getElementById('email');
-  const errorMessage = document.getElementById('errorMessage');
-
-  const email = emailInput.value;
-  const lowerCaseEmail = email.toLowerCase();
-
-  if (email !== lowerCaseEmail) {
-    errorMessage.innerText = 'Email must be in lowercase';
-    errorMessage.style.display = 'block';
-    return;
+function loadLocalStorage() {
+  const formData = JSON.parse(window.localStorage.getItem('formData'));
+  if (formData) {
+    nameInput.value = formData.name;
+    emailInput.value = formData.email;
+    messageInput.value = formData.message;
   }
-  document.getElementById('contact-form').submit();
 }
 
-onclick.addEventListener('submit', validateForm);
+function onChange(e) {
+  let formData = JSON.parse(localStorage.getItem('formData'));
+  if (!formData) {
+    formData = {};
+  }
+  const m = e.target.name;
+  formData[m] = e.target.value;
+  formData = JSON.stringify(formData);
+  window.localStorage.setItem('formData', formData);
+}
 
-// start-local-storage-functionality
-const form = document.getElementById('contact-form');
-const input = document.getElementById('name');
-const userEmail = document.getElementById('email');
-const text = document.getElementById('message');
+nameInput.addEventListener('change', onChange);
+emailInput.addEventListener('change', onChange);
+messageInput.addEventListener('change', onChange);
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+window.onload = () => {
+  fetchAllProject();
+  loadLocalStorage();
+};
 
-  localStorage.setItem('myInputValue', input.value);
-  localStorage.setItem('myEmailValue', userEmail.value);
-  localStorage.setItem('myTextValue', text.value);
+function onSubmit(e) {
+  const inputEmail = document.getElementById('email');
+  const formInfo = document.getElementById('form-info');
+  const email = inputEmail.value;
 
-  form.reset();
+  if (email !== email.toLowerCase()) {
+    e.preventDefault();
+    inputEmail.classList.add('invalid');
+    formInfo.classList.add('error');
+    formInfo.innerText = 'Error form is not sent! The Email should be in lower case!!';
+  } else {
+    inputEmail.classList.remove('invalid');
+    formInfo.classList.remove('error');
+  }
+}
+const contactForm = document.getElementById('contact-form');
+contactForm.addEventListener('submit', onSubmit);
+
+const inputEmail = document.getElementById('email');
+const formInfo = document.getElementById('form-info');
+inputEmail.addEventListener('change', () => {
+  inputEmail.classList.remove('invalid');
+  formInfo.classList.remove('error');
+  formInfo.innerText = '';
 });
-
-if (localStorage.getItem('myInputValue')) {
-  input.value = localStorage.getItem('myInputValue');
-  userEmail.value = localStorage.getItem('myEmailValue');
-  text.value = localStorage.getItem('myTextValue');
-}
