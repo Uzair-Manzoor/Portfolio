@@ -212,15 +212,15 @@ const text = document.getElementById('message');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  
+
   localStorage.setItem('myInputValue', input.value);
   localStorage.setItem('myEmailValue', userEmail.value);
   localStorage.setItem('myTextValue', text.value);
-  
+
   form.reset();
 });
-  
-  if (localStorage.getItem('myInputValue')) {
+
+if (localStorage.getItem('myInputValue')) {
   input.value = localStorage.getItem('myInputValue');
   userEmail.value = localStorage.getItem('myEmailValue');
   text.value = localStorage.getItem('myTextValue');
