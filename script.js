@@ -213,6 +213,8 @@ const text = document.getElementById('message');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   
-  
+  localStorage.setItem('myInputValue', input.value);
+  localStorage.setItem('myEmailValue', userEmail.value);
+  localStorage.setItem('myTextValue', text.value);
   
   
