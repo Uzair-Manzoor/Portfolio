@@ -220,3 +220,8 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
   
+  if (localStorage.getItem('myInputValue')) {
+  input.value = localStorage.getItem('myInputValue');
+  userEmail.value = localStorage.getItem('myEmailValue');
+  text.value = localStorage.getItem('myTextValue');
+}
