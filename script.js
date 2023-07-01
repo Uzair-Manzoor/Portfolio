@@ -203,3 +203,5 @@ function validateForm(event) {
 }
 
 onclick.addEventListener('submit', validateForm);
+
+// start-local-storage-functionality
