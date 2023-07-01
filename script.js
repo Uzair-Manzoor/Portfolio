@@ -1,4 +1,4 @@
-const mobileMenu = document.getElementById('mobile-nav-items');
+ const mobileMenu = document.getElementById('mobile-nav-items');
 function openmenu() {
   mobileMenu.style.display = 'block';
 }
@@ -205,3 +205,10 @@ function validateForm(event) {
 onclick.addEventListener('submit', validateForm);
 
 // start-local-storage-functionality
+const form = document.getElementById('contact-form');
+const input = document.getElementById('name');
+const userEmail = document.getElementById('email');
+const text = document.getElementById('message');
+
+  
+  
