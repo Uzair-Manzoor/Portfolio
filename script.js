@@ -1,4 +1,4 @@
- const mobileMenu = document.getElementById('mobile-nav-items');
+const mobileMenu = document.getElementById('mobile-nav-items');
 function openmenu() {
   mobileMenu.style.display = 'block';
 }
