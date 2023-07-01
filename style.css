@@ -621,17 +621,6 @@ a:hover {
   position: fixed;
 }
 
-#errorMessage {
-  display: none;
-  color: #fff;
-  font-family: Poppins, sans-serif;
-  font-size: 14px;
-}
-
-#errorMessage:hover {
-  color: rgb(179, 126, 126);
-}
-
 @media screen and (min-width: 768px) {
   .header {
     padding: 0 50px;
