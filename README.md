@@ -24,7 +24,9 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-> This is my responsive portfolio project with Microverse using Githib flow in a professional way to work with html and css responsive design following figma template using flexbox, basic structure and data query. 
+> This is my responsive portfolio project with Microverse using Githib flow in a professional way to work with html and css responsive design following figma template using flexbox, basic structure and data query.
+
+![image](https://github.com/Uzair-Manzoor/Portfolio/blob/main/resources/images/Screenshot%202023-07-09%20164654.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
