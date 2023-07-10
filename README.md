@@ -24,7 +24,9 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-> This is my responsive portfolio project with Microverse using Githib flow in a professional way to work with html and css responsive design following figma template using flexbox, basic structure and data query. 
+> This is my responsive portfolio project with Microverse using Githib flow in a professional way to work with html and css responsive design following figma template using flexbox, basic structure and data query.
+
+![image](https://github.com/Uzair-Manzoor/Portfolio/blob/main/resources/images/Screenshot%202023-07-09%20164654.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -35,6 +37,7 @@
   <ul>
    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -95,11 +98,13 @@ git clone https://github.com/Uzair-Manzoor/Portfolio.git
 I have added linters or tests in order to avoid typos and ensure good practice in this project. So while using this repository if you need to check your work no matters have worked on html, css and js you can use below commands
 
 - In order to run the linter test on `index.html` or any html file. use below command
-
   `npx hint` .
-- To run linter test on stylesheets. Use below command
 
+- To run linter test on stylesheets. Use below command
   `npx stylelint "**/*.{css,scss}"`
+
+- To run linter test on `script.js` or any other javascript files. Use below command
+  `npx eslint .`
 
 **6. Deployment** <a name="deployment"></a>
 
@@ -124,7 +129,7 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[add more interactive buttons and sections]**
-- [ ] **[style it beautifully]**
+- [ ] **[add more styles and functionality]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
