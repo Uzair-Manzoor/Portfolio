@@ -16,7 +16,7 @@ const projectData = [
     primaryText: 'This project is based on an online website for a conference.',
     tags: ['HTML', 'CSS', 'Javascript'],
     imageUrl: './resources/images/capstone-desktop.png',
-    projectDetails: "Capstone Project is designed to provide information and resources to students, faculty members, and university visitors, showcasing the academic programs and research opportunities available. Built with HTML, CSS, and JavaScript. The main objective of this project is to start practicing the professional way to work with CSS HTML and JavaScript in responsive design, using the basic structure, data query, flexbox and all following a template in Behance. Capstone Project",
+    projectDetails: 'Capstone Project is designed to provide information and resources to students, faculty members, and university visitors, showcasing the academic programs and research opportunities available. Built with HTML, CSS, and JavaScript. The main objective of this project is to start practicing the professional way to work with CSS HTML and JavaScript in responsive design, using the basic structure, data query, flexbox and all following a template in Behance. Capstone Project',
     liveLink: 'https://uzair-manzoor.github.io/Capstone/',
     sourceLink: 'https://github.com/Uzair-Manzoor/Capstone',
   },
