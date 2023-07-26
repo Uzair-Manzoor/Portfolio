@@ -115,7 +115,7 @@ function fetchOnePoject(id) {
     const liveLink = dcl('a');
     liveLink.classList.add('article-btn');
     liveLink.setAttribute('href', project.liveLink);
-    liveLink.innerHTML = 'See Live <span class="btn-icon"><img src="resources/icon/icon.png" alt= "Live"/></span>';
+    liveLink.innerHTML = 'See Live <span class="btn-icon"><img src="resources/icon/Icon.png" alt= "Live"/></span>';
     const sourceLink = dcl('a');
     sourceLink.classList.add('article-btn');
     sourceLink.setAttribute('href', project.sourceLink);
