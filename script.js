@@ -42,9 +42,44 @@ window.onload = () => {
     popUp.classList.add('hidden');
   });
 
-  const projectsData = [];
+  const projectsData = [
+    {
+      title: 'Space Travelers\' Hub',
+      subtitle: 'Book a trip to Space',
+      techStack: 'Front End Dev',
+      year: 2022,
+      src: 'https://github.com/Uzair-Manzoor/SpaceTravelersHub/raw/main/src/assets/images/Rocketsupdated.png?raw=true',
+      highlight: 'A Single Page App (SPA) that displays a list of Rockets & Missions by fetching real live data from SpaceX API.',
+      description: 'A Single Page App (SPA) that displays a list of Rockets & Missions by fetching real live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join space missions.',
+      lang: ['React', 'Redux', 'JavaScript', 'React Bootstrap'],
+      live: 'https://space-travelers-8tvba23t2-uzair-manzoor.vercel.app/',
+      source: 'https://github.com/Uzair-Manzoor/SpaceTravelersHub.git',
+    }
+  ];
 
-  const projectCardString = projectsData.map((project) => ``);
+  const projectCardString = projectsData.map((project) => `
+    <div class="card grid__item ">
+      <div class="inner-card">
+        <div class="card-img card-1">
+          <img
+            src="${project.src}"
+            alt="Project Snapshot"
+          />
+        </div>
+        <div class="desc">
+          <h3>${project.title}</h3>
+          <h4>${project.subtitle} <span>${project.techStack}</span> <span>${project.year}</span></h4>
+          <p>${project.highlight}</p>
+          <ul>
+            ${project.lang.map((tech) => `<li>${tech}</li>`).join('')}
+          </ul>
+          <button type="button" class="project-btn button">
+            See Project
+          </button>
+        </div>
+      </div>
+    </div>
+  `);
 
   const popupContainer = document.querySelector('.project-popup-container');
   const recentWork = document.querySelector('.recent-work');
