@@ -365,7 +365,51 @@
       </main>
 
       <footer id="contact">
-        
+        <section class="contact-form">
+          <div class="contact-wrapper">
+            <div>
+              <h2 class="contact-title">Contact me</h2>
+              <p class="contact-description">
+                I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+              </p>
+              <form
+                action="https://formspree.io/f/xeqwyqrv"
+                method="post"
+                id="form"
+              >
+                <label hidden for="text"> Name </label>
+                <input
+                  type="text"
+                  id="text"
+                  name="text"
+                  maxlength="30"
+                  placeholder="Enter your name"
+                  required
+                />
+                <label hidden for="text"> Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <label hidden for="text"> Add your coment</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  maxlength="500"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+                <button type="submit" class="form-btn button">
+                  Get In Touch
+                </button>
+                <span class="message"></span>
+              </form>
+            </div>
+          </div>
+        </section>
       </footer>
     </div>
     <script src="./script.js"></script>
