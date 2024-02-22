@@ -1,245 +1,212 @@
-const mobileMenu = document.getElementById('mobile-nav-items');
-function openmenu() {
-  mobileMenu.style.display = 'block';
-}
-function closemenu() {
-  mobileMenu.style.display = 'none';
-}
-mobileMenu.addEventListener('click', openmenu);
-mobileMenu.addEventListener('click', closemenu);
+window.onload = () => {
+  const barMenu = document.querySelector('.bar-menu');
+  const popUp = document.querySelector('.pop-up');
+  const close = document.querySelector('.close');
+  const menu = document.querySelector('.menu');
+  const skillItems = document.querySelectorAll('.skill-item');
 
-const projectData = [
-  {
-    id: 'project1',
-    title: 'Capstone',
-    frame: ['CONFERENCE', 'Front End Dev', 2023],
-    primaryText: 'This project is based on an online website for a conference.',
-    tags: ['HTML', 'CSS', 'Javascript'],
-    imageUrl: './resources/images/capstone-desktop.png',
-    projectDetails: 'Capstone Project is designed to provide information and resources to students, faculty members, and university visitors, showcasing the academic programs and research opportunities available. Built with HTML, CSS, and JavaScript. The main objective of this project is to start practicing the professional way to work with CSS HTML and JavaScript in responsive design, using the basic structure, data query, flexbox and all following a template in Behance. Capstone Project',
-    liveLink: 'https://uzair-manzoor.github.io/Capstone/',
-    sourceLink: 'https://github.com/Uzair-Manzoor/Capstone',
-  },
-  {
-    id: 'project2',
-    title: 'Multi-Post Stories',
-    frame: ['FACEBOOK', 'FULL STACK DEV', 2015],
-    primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['HTML', 'CSS', 'Javascript'],
-    imageUrl: './resources/images/Snapshoot Portfolio 6.jpg',
-    projectDetails: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem",
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    id: 'project3',
-    title: 'Tonic',
-    frame: ['CANOPY', 'Back End Dev', 2015],
-    primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['HTML', 'CSS', 'Javascript'],
-    imageUrl: './resources/images/Snapshoot Portfolio 7.jpg',
-    projectDetails: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    id: 'project4',
-    title: 'Multi-Post Stories',
-    frame: ['FACEBOOK', 'FULL STACK DEV', 2015],
-    primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['HTML', 'CSS', 'Javascript'],
-    imageUrl: './resources/images/Snapshoot Portfolio 8.jpg',
-    projectDetails: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem",
-    liveLink: '#',
-    sourceLink: '#',
-  },
-];
-
-function dcl(t = 'div') {
-  if (!t) {
-    t = 'div';
-  }
-  return document.createElement(t);
-}
-
-function fetchOnePoject(id) {
-  const projects = projectData;
-  let project;
-  for (let i = 0; i < projectData.length; i += 1) {
-    if (projects[i].id === id) {
-      project = projects[i];
-    }
-  }
-  if (project) {
-    const article = dcl('article');
-    article.classList.add('popup-article');
-    article.setAttribute('id', project.id);
-    const articleModal = dcl();
-    articleModal.classList.add('article-modal');
-    const workTitle = dcl('h2');
-    workTitle.classList.add('work-title');
-    workTitle.innerText = project.title;
-    const crossIcon = dcl('span');
-    crossIcon.setAttribute('id', 'article-close');
-    crossIcon.innerHTML = '<img src="resources/icon/cross-icon-00.png" alt="X"/>';
-    const workInfo = dcl('ul');
-    workInfo.classList.add('work-info');
-    project.frame.forEach((f) => {
-      const workInfoItem = dcl('li');
-      workInfoItem.classList.add('work-info-item');
-      workInfoItem.innerText = f;
-      workInfo.appendChild(workInfoItem);
+  // On click add active class to clicked skill item and remove from others
+  skillItems.forEach((skillItem) => {
+    skillItem.addEventListener('click', () => {
+      // if item is already active remove active class
+      if (skillItem.classList.contains('active')) {
+        skillItem.classList.remove('active');
+        const icon = skillItem.querySelector('.item-1-header > i');
+        icon.classList.remove('fa-solid', 'fa-angle-down');
+        icon.classList.add('fa-solid', 'fa-angle-right');
+        return;
+      }
+      skillItems.forEach((item) => {
+        // Change item-1-header > i to fa-solid fa-angle-right next arrow"
+        const icon = item.querySelector('.item-1-header > i');
+        icon.classList.remove('fa-solid', 'fa-angle-down');
+        icon.classList.add('fa-solid', 'fa-angle-right');
+        item.classList.remove('active');
+      });
+      skillItem.classList.add('active');
+      const icon = skillItem.querySelector('.item-1-header > i');
+      icon.classList.remove('fa-solid', 'fa-angle-right');
+      icon.classList.add('fa-solid', 'fa-angle-down');
     });
-    const articleImage = dcl();
-    articleImage.classList.add('article-image');
-    articleImage.innerHTML = `<img class='article-img' src='${project.imageUrl}' alt='${project.title}'/>`;
-    const projectBlock = dcl();
-    projectBlock.classList.add('article-block');
-    const leftBlock = dcl();
-    leftBlock.classList.add('left-block');
-    const workDetailsContent = dcl('p');
-    workDetailsContent.classList.add('work-details-content');
-    workDetailsContent.innerText = project.projectDetails;
-    leftBlock.append(workDetailsContent);
-    const rightBlock = dcl();
-    rightBlock.classList.add('right-block');
-    const workCat = dcl('ul');
-    workCat.classList.add('work-cats');
-    project.tags.forEach((tag) => {
-      const catLi = dcl('li');
-      catLi.innerText = tag;
-      workCat.appendChild(catLi);
-    });
-    const actions = dcl();
-    actions.classList.add('actions');
-    const liveLink = dcl('a');
-    liveLink.classList.add('article-btn');
-    liveLink.setAttribute('href', project.liveLink);
-    liveLink.innerHTML = 'See Live <span class="btn-icon"><img src="resources/icon/Icon.png" alt= "Live"/></span>';
-    const sourceLink = dcl('a');
-    sourceLink.classList.add('article-btn');
-    sourceLink.setAttribute('href', project.sourceLink);
-    sourceLink.innerHTML = 'See Live <span class="btn-icon"><img src="resources/icon/Vector.png" alt= "Live"/></span>';
-    actions.append(liveLink, sourceLink);
-    rightBlock.append(workCat, actions);
-    projectBlock.append(leftBlock, rightBlock);
-    articleModal.append(crossIcon, workTitle, workInfo, articleImage, projectBlock);
-    article.append(articleModal);
-    document.querySelector('main').append(article);
-    const closeModal = document.getElementById('article-close');
-    closeModal.addEventListener('click', () => {
-      document.querySelector('main').removeChild(article);
-    });
-  }
-}
-
-function fetchAllProject() {
-  const portfolio = document.getElementById('portfolio');
-  projectData.forEach((project) => {
-    const card = dcl();
-    card.classList.add('work-card');
-    const workPreview = dcl();
-    workPreview.classList.add('work-preview');
-    workPreview.innerHTML = `<img class='project-img' src='${project.imageUrl}' alt='${project.title}'/>`;
-    card.appendChild(workPreview);
-    const workDetails = dcl();
-    workDetails.classList.add('work-details');
-    const workTitle = dcl('h2');
-    workTitle.classList.add('work-title');
-    workTitle.innerText = project.title;
-    workDetails.appendChild(workTitle);
-    const workInfo = dcl('ul');
-    workInfo.classList.add('work-info');
-    project.frame.forEach((f) => {
-      const workInfoItem = dcl('li');
-      workInfoItem.classList.add('work-info-item');
-      workInfoItem.innerText = f;
-      workInfo.appendChild(workInfoItem);
-    });
-    workDetails.appendChild(workInfo);
-    const workDetailsContent = dcl('p');
-    workDetailsContent.classList.add('work-details-content');
-    workDetailsContent.innerText = project.primaryText;
-    workDetails.appendChild(workDetailsContent);
-    const workCat = dcl('ul');
-    workCat.classList.add('work-cats');
-    project.tags.forEach((tag) => {
-      const catLi = dcl('li');
-      catLi.innerText = tag;
-      workCat.appendChild(catLi);
-    });
-    workDetails.appendChild(workCat);
-    const atnBrn = dcl('button');
-    atnBrn.classList.add('btn');
-    atnBrn.innerText = 'See More';
-    atnBrn.setAttribute('id', project.id);
-    atnBrn.addEventListener('click', () => {
-      fetchOnePoject(project.id);
-    });
-    workDetails.appendChild(atnBrn);
-    card.appendChild(workDetails);
-    portfolio.appendChild(card);
   });
-}
 
-window.onload = () => {
-  fetchAllProject();
-};
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const messageInput = document.getElementById('message');
+  barMenu.addEventListener('click', () => {
+    popUp.classList.remove('hidden');
+  });
 
-function loadLocalStorage() {
-  const formData = JSON.parse(window.localStorage.getItem('formData'));
-  if (formData) {
-    nameInput.value = formData.name;
-    emailInput.value = formData.email;
-    messageInput.value = formData.message;
-  }
-}
+  close.addEventListener('click', () => {
+    popUp.classList.remove('hidden');
+  });
 
-function onChange(e) {
-  let formData = JSON.parse(localStorage.getItem('formData'));
-  if (!formData) {
-    formData = {};
-  }
-  const m = e.target.name;
-  formData[m] = e.target.value;
-  formData = JSON.stringify(formData);
-  window.localStorage.setItem('formData', formData);
-}
+  menu.addEventListener('click', () => {
+    popUp.classList.add('hidden');
+  });
 
-nameInput.addEventListener('change', onChange);
-emailInput.addEventListener('change', onChange);
-messageInput.addEventListener('change', onChange);
+  const projectsData = [];
 
-window.onload = () => {
-  fetchAllProject();
-  loadLocalStorage();
-};
+  const projectCardString = projectsData.map((project) => ``);
 
-function onSubmit(e) {
-  const inputEmail = document.getElementById('email');
-  const formInfo = document.getElementById('form-info');
-  const email = inputEmail.value;
+  const popupContainer = document.querySelector('.project-popup-container');
+  const recentWork = document.querySelector('.recent-work');
+  const parser = new DOMParser();
 
-  if (email !== email.toLowerCase()) {
+  projectCardString.forEach((projectString, index) => {
+    const projectElement = parser.parseFromString(projectString, 'text/html').body.firstChild;
+
+    const mobilePopup = `
+      <div class="project-popup-hidden ">
+        <div class="project-background"></div>
+          <div class="project-popup">
+
+            <div class="project-header">
+              <i class="fa-solid fa-xmark project-close"></i>
+              <h2>${projectsData[index].title}</h2>
+              <p>${projectsData[index].subtitle} <span>${projectsData[index].techStack}</span> <span>${projectsData[index].year}</span></p>
+            </div>
+            <div class="project-img" style="background-image: url(${projectsData[index].src})">
+            </div>
+            <div class="project-footer">
+              <p class="project-desc">${projectsData[index].description}</p>
+              <div>
+                <ul>
+                  ${projectsData[index].lang.map((tech) => `<li>${tech}</li>`).join('')}
+                </ul>
+                <span></span>
+                <div class="project-links">
+                  <button ><a href="${projectsData[index].live}" target="_blank">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                  <button><a href="${projectsData[index].source}" target="_blank">See Source <i class="fa-brands fa-github"></i></a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    `;
+
+    const mobilePopupElement = parser.parseFromString(mobilePopup, 'text/html').body.firstChild;
+
+    const projectBtn = projectElement.querySelector('.project-btn');
+    const closeBtn = mobilePopupElement.querySelector('.project-close');
+
+    projectBtn.addEventListener('click', () => {
+      mobilePopupElement.classList.toggle('project-popup-hidden');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      mobilePopupElement.classList.toggle('project-popup-hidden');
+    });
+
+    recentWork.append(projectElement);
+    popupContainer.append(mobilePopupElement);
+  });
+
+  const form = document.querySelector('#form');
+  const messageContainer = document.querySelector('.message');
+
+  const isValidEmail = (email) => {
+    const eamilPattern = /^(([^<>()[\]\\.,;:\s@"A-Z]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+    return eamilPattern.test(email);
+  };
+
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
-    inputEmail.classList.add('invalid');
-    formInfo.classList.add('error');
-    formInfo.innerText = 'Error form is not sent! The Email should be in lower case!!';
-  } else {
-    inputEmail.classList.remove('invalid');
-    formInfo.classList.remove('error');
-  }
-}
-const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', onSubmit);
 
-const inputEmail = document.getElementById('email');
-const formInfo = document.getElementById('form-info');
-inputEmail.addEventListener('change', () => {
-  inputEmail.classList.remove('invalid');
-  formInfo.classList.remove('error');
-  formInfo.innerText = '';
+    const formData = new FormData(e.target);
+    const valid = isValidEmail(formData.get('email'));
+    if (valid) {
+      const message = document.createElement('span');
+      message.classList.add('success');
+      message.innerHTML = 'Data sent successfully! 🙌';
+      messageContainer.replaceChildren(message);
+    } else {
+      const message = document.createElement('span');
+      message.classList.add('error');
+      message.innerHTML = 'Error!⚡ Incorrect format. Enter email in lowercase';
+      messageContainer.replaceChildren(message);
+    }
+  });
+
+  const name = document.querySelector('#text');
+  const email = document.querySelector('#email');
+  const comment = document.querySelector('#comment');
+
+  function saveData() {
+    const data = {
+      fieldName: name.value,
+      fieldEmail: email.value,
+      fieldComment: comment.value,
+    };
+    localStorage.setItem('data', JSON.stringify(data));
+  }
+
+  let formObject = JSON.parse(localStorage.getItem('data'));
+  if (!formObject) {
+    formObject = {
+      name: '',
+      email: '',
+      comment: '',
+    };
+    saveData();
+  }
+
+  if (!formObject.name) {
+    formObject.name = '';
+  }
+
+  if (!formObject.email) {
+    formObject.email = '';
+  }
+
+  if (!formObject.comment) {
+    formObject.comment = '';
+  }
+
+  name.value = formObject.name;
+  name.addEventListener('change', (e) => {
+    formObject.name = e.target.value;
+    localStorage.setItem('data', JSON.stringify(formObject));
+  });
+
+  email.value = formObject.email;
+  email.addEventListener('change', (e) => {
+    formObject.email = e.target.value;
+    localStorage.setItem('data', JSON.stringify(formObject));
+  });
+
+  comment.value = formObject.comment;
+  comment.addEventListener('change', (e) => {
+    formObject.comment = e.target.value;
+    localStorage.setItem('data', JSON.stringify(formObject));
+  });
+};
+
+// Wait for the page to load
+document.addEventListener('DOMContentLoaded', () => {
+  // Get a reference to the portfolio grid
+  const portfolioGrid = document.querySelector('.recent-work');
+
+  // Check if the user has scrolled down to the portfolio grid
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+      && rect.bottom >= 0
+      && rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+      && rect.right >= 0);
+  }
+
+  window.addEventListener('scroll', () => {
+    // Get all child elements of the portfolio grid
+    const portfolioItems = portfolioGrid.querySelectorAll('.card');
+
+    // Loop through each child element and check if it's in the viewport
+    portfolioItems.forEach((portfolioItem) => {
+      if (isElementInViewport(portfolioItem) && !portfolioItem.classList.contains('animate__animated')) {
+        // Add the 'animated' and 'fade-in' classes to the child element to trigger the animation
+        portfolioItem.classList.add('animate__animated', 'animate__fadeIn');
+      } else if (!isElementInViewport(portfolioItem) && portfolioItem.classList.contains('animate__animated')) {
+        // Remove the 'animated' class from the child element when it goes out of view
+        portfolioItem.classList.remove('animate__animated');
+        portfolioItem.classList.remove('animate__fadeIn');
+      }
+    });
+  });
 });
