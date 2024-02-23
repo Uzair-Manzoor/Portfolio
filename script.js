@@ -44,6 +44,18 @@ window.onload = () => {
 
   const projectsData = [
     {
+      title: 'HealthCareApplication',
+      subtitle: 'Book an Appointment',
+      techStack: 'Full Stack Dev',
+      year: 2024,
+      src: 'https://raw.githubusercontent.com/Uzair-Manzoor/healthcare-app-frontend/e4282daacc93e3627d3f8bdf10bf1112f8496cbe/src/assets/HealthCareApp.png',
+      highlight: 'React/Redux front-end application for the "Doctor Appointments" communicates with the Rails back-end API to ensure a cohesive and efficient user experience',
+      description: 'React/Redux front-end application for the "Doctor Appointments" communicates with the Rails back-end API to ensure a cohesive and efficient user experience',
+      lang: ['PostgreSQL', 'React', 'Redux', 'Ruby On Rails', 'Render', 'Vercel'],
+      live: 'healthcare-app-frontend.vercel.app',
+      source: 'https://github.com/Uzair-Manzoor/healthcare-app-backend.git',
+    },
+    {
       title: 'Space Travelers\' Hub',
       subtitle: 'Book a trip to Space',
       techStack: 'Front End Dev',
