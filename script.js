@@ -47,14 +47,26 @@ window.onload = () => {
       title: 'Space Travelers\' Hub',
       subtitle: 'Book a trip to Space',
       techStack: 'Front End Dev',
-      year: 2022,
+      year: 2023,
       src: 'https://github.com/Uzair-Manzoor/SpaceTravelersHub/raw/main/src/assets/images/Rocketsupdated.png?raw=true',
       highlight: 'A Single Page App (SPA) that displays a list of Rockets & Missions by fetching real live data from SpaceX API.',
       description: 'A Single Page App (SPA) that displays a list of Rockets & Missions by fetching real live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join space missions.',
       lang: ['React', 'Redux', 'JavaScript', 'React Bootstrap'],
       live: 'https://space-travelers-8tvba23t2-uzair-manzoor.vercel.app/',
       source: 'https://github.com/Uzair-Manzoor/SpaceTravelersHub.git',
-    }
+    },
+    {
+      title: 'Math Magicians',
+      subtitle: 'Use Magic of Math',
+      techStack: 'Front End Dev',
+      year: 2023,
+      src: 'https://github.com/Uzair-Manzoor/math-magicians/raw/develop/src/MathMagicians.png?raw=true',
+      highlight: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that enables users to perform simple calculations.',
+      description: 'Welcome to Math Magicians. Your go-to web application for all your mathematical needs! A powerful calculator application that makes complex computations a breeze. Math Magicians is here to simplify your math journey with a sleek and user-friendly interface.',
+      lang: ['React', 'JavaScript', 'CSS'],
+      live: 'https://math-magicians-ir68txw5n-uzair-manzoor.vercel.app/',
+      source: 'https://github.com/Uzair-Manzoor/math-magicians.git',
+    },
   ];
 
   const projectCardString = projectsData.map((project) => `
