@@ -90,7 +90,7 @@ window.onload = () => {
       lang: ['HTML', 'CSS', 'Javascript'],
       live: 'https://uzair-manzoor.github.io/JS-Capstone-Poki-API/',
       source: 'https://github.com/Uzair-Manzoor/JS-Capstone-Poki-API.git',
-    }
+    },
   ];
 
   const projectCardString = projectsData.map((project) => `
