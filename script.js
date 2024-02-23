@@ -79,6 +79,18 @@ window.onload = () => {
       live: 'https://math-magicians-ir68txw5n-uzair-manzoor.vercel.app/',
       source: 'https://github.com/Uzair-Manzoor/math-magicians.git',
     },
+    {
+      title: 'Pokemon API',
+      subtitle: 'Data about Pokémon World',
+      techStack: 'Front End Dev',
+      year: 2023,
+      src: 'https://raw.githubusercontent.com/Uzair-Manzoor/JS-Capstone-Poki-API/eb8c7670df78edf3aca536254f21d327f9220a3d/src/assets/Poki-api.png',
+      highlight: 'The Pokemon API is about building web application based on an external API that provides data about the pokemon world.',
+      description: 'The JavaScript capstone project about building web application based on an external API that provides data about pokemon world and the webapp is built around it. The webapp have 2 user interfaces. A home page showing a list of pokemon cards and popup window with more data, that can be used to comment on it or reserve it for a period of time.',
+      lang: ['HTML', 'CSS', 'Javascript'],
+      live: 'https://uzair-manzoor.github.io/JS-Capstone-Poki-API/',
+      source: 'https://github.com/Uzair-Manzoor/JS-Capstone-Poki-API.git',
+    }
   ];
 
   const projectCardString = projectsData.map((project) => `
