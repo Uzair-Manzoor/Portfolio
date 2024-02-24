@@ -197,14 +197,14 @@ main {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.5rem;
-  filter: drop-shadow(4px 4px 1px lightgrey);
+  filter: drop-shadow(4px 4px 1px rgb(152, 161, 183));
   color: #172b4d;
   padding-bottom: 12px;
 }
 
 .supporting-text {
   font-size: 1rem;
-  filter: drop-shadow(3px 3px 1px lightgrey);
+  filter: drop-shadow(3px 3px 1px rgb(210, 205, 205));
   font-weight: 400;
   line-height: 1.3rem;
   color: #344563;
@@ -228,13 +228,13 @@ main {
 .connect:hover {
   text-decoration: underline;
   transform: scale(1.01);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   transition: all 0.4s ease;
 }
 
 .connect:active {
   background-color: white;
-  color: #1c32ff;
+  color: #44087f;
 }
 
 .icons {
@@ -249,7 +249,7 @@ main {
 .social-icons .icon {
   position: relative;
   background: #fff;
-  border-radius: 50%;
+  border-radius: 50% 50% 50% 0;
   padding: 8px;
   margin-right: 5px;
   width: 36px;

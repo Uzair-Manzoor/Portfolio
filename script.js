@@ -186,12 +186,12 @@ window.onload = () => {
     if (valid) {
       const message = document.createElement('span');
       message.classList.add('success');
-      message.innerHTML = 'Data sent successfully! 🙌';
+      message.innerHTML = 'Message sent successfully!';
       messageContainer.replaceChildren(message);
     } else {
       const message = document.createElement('span');
       message.classList.add('error');
-      message.innerHTML = 'Error!⚡ Incorrect format. Enter email in lowercase';
+      message.innerHTML = 'Error! Incorrect format. Enter email in lowercase';
       messageContainer.replaceChildren(message);
     }
   });
