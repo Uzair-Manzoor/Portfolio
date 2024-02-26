@@ -19,6 +19,12 @@ strong {
   color: #6070ff;
 }
 
+strong:hover {
+  color: #39aa16;
+  transition: all 1s ease-in;
+  letter-spacing: 0.2px;
+}
+
 .fa-sr-only {
   font-size: 0.55rem;
 }
@@ -229,7 +235,7 @@ main {
   text-decoration: underline;
   transform: scale(1.01);
   letter-spacing: 2px;
-  transition: all 0.4s ease;
+  transition: all 1s ease;
 }
 
 .connect:active {
@@ -488,13 +494,13 @@ main {
 .project-footer li:hover {
   transform: scale(1.05);
   color: #6070ff;
-  transition: all 0.2s ease-in;
+  transition: all 0.9s ease-in;
 }
 
 .item-1-list li:hover {
   cursor: text;
   transform: scale(1.01);
-  transition: all 0.3s ease-out;
+  transition: all 0.9s ease-out;
   letter-spacing: 1px;
   box-shadow: 4px 9px 15px rgb(0 0 0 / 10%), -8px -9px 20px rgb(181 172 172 / 14%);
 }
@@ -644,7 +650,7 @@ main {
   cursor: pointer;
   color: #6070ff;
   letter-spacing: 1px;
-  transition: all 0.4s ease;
+  transition: all 0.9s ease;
 }
 
 .item-1-list img {
@@ -785,7 +791,7 @@ main {
 
 .menu-item:hover {
   text-decoration: underline;
-  transition: all 0.4s ease;
+  transition: all 0.9s ease;
   transform: translateX(10px);
   color: lightgray;
   letter-spacing: 2px;
@@ -891,7 +897,7 @@ main {
   border-radius: 5px;
   cursor: text;
   transform: scale(1.01);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.9s ease-in-out;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 4px rgb(159 158 158 / 15%);
 }
 
@@ -1058,7 +1064,7 @@ form > * {
   .menu a:hover,
   .logo:hover {
     color: #2230d2;
-    transition: all 0.4s ease;
+    transition: all 0.9s ease;
     transform: scaleX(1.1);
   }
 
