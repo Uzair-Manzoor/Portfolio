@@ -80,6 +80,18 @@ window.onload = () => {
       source: 'https://github.com/Uzair-Manzoor/math-magicians.git',
     },
     {
+      title: 'Metrics-WebApp',
+      subtitle: 'Access detailed weather information',
+      techStack: 'Front End Dev',
+      year: 2023,
+      src: './images/portfolio/weather.jpg',
+      highlight: 'A wepapp that allows users to explore air quality and weather data for various regions within Canada',
+      description: 'A pollution metrics dashboard for Canadian cities and states. It allows users to explore air quality and weather data for various regions within Canada. Users can navigate through Canadian states, view a list of cities, and access detailed pollution and weather information for each city. The app also features a search functionality to help users find specific states and cities of interest. It provides real-time data and helps users make informed decisions based on air quality and weather conditions in different parts of Canada',
+      lang: ['HTML', 'CSS', 'Javascript', 'React'],
+      live: 'https://metrics-webapp-git-styling-uzair-manzoor.vercel.app/',
+      source: 'https://github.com/Uzair-Manzoor/Matrics-webapp.git',
+    },
+    {
       title: 'Pokemon API',
       subtitle: 'Data about Pokémon World',
       techStack: 'Front End Dev',
