@@ -48,7 +48,7 @@ window.onload = () => {
       subtitle: 'Book an Appointment',
       techStack: 'Full Stack Dev',
       year: 2024,
-      src: 'https://raw.githubusercontent.com/Uzair-Manzoor/healthcare-app-frontend/e4282daacc93e3627d3f8bdf10bf1112f8496cbe/src/assets/HealthCareApp.png',
+      src: './images/portfolio/doctorsAppointment.jpg',
       highlight: 'The React/Redux front-end application for the "Doctor Appointments" seamlessly communicates with the Rails back-end API, ensuring a cohesive and efficient user experience.',
       description: 'The React/Redux front-end application for the "Doctor Appointments" communicates with the Rails back-end API to ensure a cohesive and efficient user experience. Users can log in with a username, browse a list of doctors, view detailed information about specific doctors, reserve appointments, add new doctors, and manage existing doctors. The application is designed to be responsive, offering a seamless experience on both desktop and mobile devices.',
       lang: ['PostgreSQL', 'React', 'Redux', 'Ruby On Rails', 'Render', 'Vercel'],
