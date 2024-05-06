@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #e5e5e5a3;
+  background: linear-gradient(rgb(40, 94, 11), rgb(66, 44, 157), rgb(6, 23, 83));
+  /* background-color: #2e0937de; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -598,7 +599,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-top-right-radius: 50px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.19);
 }
