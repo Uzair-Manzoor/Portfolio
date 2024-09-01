@@ -55,7 +55,7 @@
 
 - [Live Demo Link](https://uzair-manzoor.github.io/Portfolio/)
   
-  ![image](https://github.com/Uzair-Manzoor/Portfolio/assets/99558868/40dbc985-c9a4-4bf4-870d-d24fcf351238)
+  ![image](images/ss.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
